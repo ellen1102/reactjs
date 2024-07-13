@@ -14,9 +14,13 @@ export default function Home() {
     <div className="row">
       <div className="col-md-6">
 
-      <h1 style={{ fontSize: "24px", color: "red" }}>Home Movie List</h1>
-      <h2 style={{ fontSize: "20px", color: "blue"}}>Ellen Febriyani</h2>
-      <h3 style={{ fontSize: "16px", color: "black" }}>Kelas Pemograman Web 2023-2024</h3>
+      <h1 style={{ fontSize: "24px", color: "magenta", textDecoration: "underline", fontWeight: "bold", textDecoration: "underline", 
+            fontWeight: "bold",
+            backgroundColor: "rgba(255, 255, 0, 0.5)", 
+            padding: "4px",
+            display: "inline-block" }}>Home Movie List</h1>
+          <h2 style={{ fontSize: "20px", color: "blue", textShadow: "2px 2px 4px rgba(255, 255, 0, 1)" }}>Ellen Febriyani</h2>
+          <h3 style={{ fontSize: "16px", color: "black", textShadow: "2px 2px 8px rgba(128, 0, 128, 0.5)" }}>Kelas Pemograman Web 2023-2024</h3>
 
       <Stack direction="horizontal" gap={2}>
           {/* <Button as="a" variant="primary">
@@ -37,7 +41,7 @@ export default function Home() {
 <br/>
           </div>
       </div>
-  <div className='bg-secondary' >
+  <div className='bg-light' >
         <Moviecard/>
         </div>
          </div>

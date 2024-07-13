@@ -43,7 +43,7 @@ return (
                 <img className="card-img-top" src={movie.foto} alt="Card image cap" />
                 <Button
                   as="a"
-                  variant="secondary"
+                  variant="danger"
                   onClick={() => setDelete(movie.id)}
                 >
                   <svg
@@ -63,6 +63,15 @@ return (
               <div className='bg-dark p-2 m-1'>
                 <CardText>{movie.judul}</CardText>
                 <CardText>Rating: {movie.rating}</CardText>
+                <CardText>{movie.deskripsi}</CardText>
+                <figure>
+  <blockquote class="blockquote">
+    <p>Rating ini diberikan berdasarkan kesesuaian saya pribadi.</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    Ellen Febriyani <cite title=""></cite>
+  </figcaption>
+</figure>
               </div>
             </Card>
           </div>
