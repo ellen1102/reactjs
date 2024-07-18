@@ -48,7 +48,7 @@ const MovieForms = () => {
  };
 return (
     <div className="row">
-<form className='gradient-custom p-6'  onSubmit={simpanData}>
+<form className='gradient-custom p-6'  onSubmit={simpanData} style={{ height: '400px', padding: '20px' }}>
   <div className="form-group row">
     <label htmlFor="judul" className="col-sm-2 col-form-label">Judul Film</label>
     <div className="col-sm-10">
@@ -59,6 +59,7 @@ return (
       onChange={(e) => setJudul(e.target.value)}/>
     </div>
   </div>
+  <br />
   <div className="form-group row">
     <label htmlFor="sutradara" className="col-sm-2 col-form-label">Sutradara</label>
     <div className="col-sm-10">
@@ -69,7 +70,7 @@ return (
       placeholder='sutradara'   />
     </div>
   </div>
-
+  <br />
   <div className="form-group row">
     <label htmlFor="deskripsi" className="col-sm-2 col-form-label ">Deskripsi</label>
     <div className="col-sm-10">
@@ -81,6 +82,7 @@ return (
       />
     </div>
   </div>
+  <br />
   <div className="form-group row">
     <label htmlFor="image" className="col-sm-2 col-form-label">Gambar Cover</label>
     <div className="col-sm-10">
@@ -90,8 +92,7 @@ return (
     />
     </div>
   </div> 
- 
-  
+  <br />
   <div className="form-group row">
     <label className="col-sm-2 col-form-label">Rating</label>
     <div className="col-sm-5">
@@ -109,6 +110,7 @@ return (
       </div>
     </div>
   </div>
+  <br />
   <div className="form-group row">
   <div className="col-sm-5">
   <Button type='submit' variant="primary">
